@@ -1,4 +1,4 @@
-SQL Injection in DVWA (Medium Level)
+## SQL Injection in DVWA (Medium Level)
 
 ## Overview
 
@@ -24,6 +24,10 @@ I switched to manipulating numeric logic, which bypassed the filter.
 
 I confirmed the vulnerability when I got back unauthorized records.
 
+Here’s a screenshot showing the exploitation of the SQL injection vulnerability in DVWA:
+
+![Exploitation Screenshot](dvwa_sql_injection_exploitation.png)
+
 ## Root Cause
 
 Untrusted user input is directly added into SQL queries. Escaping is used, but SQL code and data aren’t separated properly.
@@ -45,8 +49,3 @@ Nosa Godwin Enoma
 Linkedin: https://www.linkedin.com/in/nosa-godwin-enoma-4b6b31287/
 GitHub: https://github.com/nosaenomag
 
-## Exploitation Process
-
-Here’s a screenshot showing the exploitation of the SQL injection vulnerability in DVWA:
-
-![SQL Injection Screenshot](dvwa_sql_injection_exploitation.png)
